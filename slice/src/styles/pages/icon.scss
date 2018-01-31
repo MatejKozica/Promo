@@ -14,11 +14,12 @@
     background-size: cover;
 }
 .icon__container{
+    top: 0px;
     position: absolute;
     display: inline-block;
     margin: 40px 20px 20px 40px;
     user-select: none;
-    z-index: 1;
+    
 }
 .icon{
     position: relative;
@@ -39,6 +40,8 @@
     background-size: cover;
 }
 .icon__hover__container{
+    z-index: 10;
+    position:relative;
     float: right;
     text-align: center;
     transition: all ease-in-out 0.2s;
@@ -60,9 +63,7 @@
     text-transform: uppercase;
     font-weight: 800;
 }
-.icon:hover+.icon__container{
-    z-index: 2;
-}
+
 .icon:hover+.icon__hover__container{
     height: 58px;
     width: 181.25px;
