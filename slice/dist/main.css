@@ -418,7 +418,27 @@ template {
 [hidden] {
   display: none; }
 
+.widget__container {
+  width: 171.5px;
+  height: 171.5px;
+  padding: 10px 10px;
+  margin: 40px 20px 20px 40px;
+  display: inline-block;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+     -moz-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25); }
+
+.widget__clock {
+  width: 151.5px;
+  height: 151.5px;
+  background-image: url("../assets/clock__analog.png");
+  -moz-background-size: cover;
+       background-size: cover; }
+
 .icon__container {
+  top: 0px;
+  position: absolute;
   display: inline-block;
   margin: 40px 20px 20px 40px;
   -webkit-user-select: none;
@@ -433,22 +453,23 @@ template {
   background-color: white;
   color: transparent;
   float: left;
-  -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.5);
-     -moz-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.5); }
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+     -moz-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25); }
 
 .icon__favicon {
   position: absolute;
-  top: 12px;
-  left: 12px;
-  width: 33px;
-  height: 33px;
-  background-image: url("../assets/youtube.svg");
+  top: 13px;
+  left: 13px;
+  width: 32px;
+  height: 32px;
   background-repeat: no-repeat;
   -moz-background-size: cover;
        background-size: cover; }
 
 .icon__hover__container {
+  z-index: 10;
+  position: relative;
   float: right;
   text-align: center;
   -webkit-transition: all ease-in-out 0.2s;
@@ -468,10 +489,10 @@ template {
   display: block;
   padding-top: 21.5px;
   padding-bottom: 21.5px;
-  background-color: lightgray;
-  -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.5);
-     -moz-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.5);
+  background-color: #e1e1e1;
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+     -moz-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
   text-transform: uppercase;
   font-weight: 800; }
 
@@ -498,9 +519,8 @@ template {
   overflow-y: none; }
 
 .icon__links {
-  width: 181.25px;
+  width: 187.25px;
   height: 0px;
-  max-height: 174px;
   overflow: hidden;
   -webkit-transition: all ease-in-out 0.2s;
   -o-transition: all ease-in-out 0.2s;
@@ -514,16 +534,16 @@ template {
   padding-top: 21.5px;
   padding-bottom: 21.5px;
   background-color: white;
-  -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.5);
-     -moz-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+     -moz-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
   -webkit-transition: all ease-in-out 0.2s;
   -o-transition: all ease-in-out 0.2s;
   -moz-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s; }
 
 .icon__hover:hover + .icon__links {
-  height: auto;
+  height: 174px;
   overflow: visible;
   overflow-y: auto;
   -webkit-transition: all ease-in-out 0.2s;
@@ -532,7 +552,7 @@ template {
   transition: all ease-in-out 0.2s; }
 
 .icon__links:hover {
-  height: auto;
+  height: 174px;
   overflow: visible;
   overflow-y: auto;
   -webkit-transition: all ease-in-out 0.2s;
@@ -541,4 +561,37 @@ template {
   transition: all ease-in-out 0.2s; }
 
 .icon__link:hover {
-  background-color: lightgray; }
+  background-color: #e1e1e1; }
+
+.icon__links::-webkit-scrollbar {
+  position: absolute;
+  width: 6px; }
+
+.icon__links::-webkit-scrollbar-button {
+  width: 6px;
+  height: 100%;
+  background: transparent; }
+
+.icon__links::-webkit-scrollbar-thumb {
+  background: darkslategray;
+  border: 0px none #ffffff;
+  -webkit-border-radius: 0px;
+          border-radius: 0px; }
+
+.icon__container__second {
+  left: 320px; }
+
+.icon__favicon--first {
+  background-image: url("../assets/youtube.svg"); }
+
+.icon__favicon--second {
+  background-image: url("../assets/facebook.svg"); }
+
+.icon__favicon--third {
+  background-image: url("../assets/instagram.svg"); }
+
+.icon__container--second {
+  left: 340px; }
+
+.icon__container--third {
+  left: 450px; }

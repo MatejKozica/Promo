@@ -1,7 +1,25 @@
+.widget__container{
+    width: 171.5px;
+    height: 171.5px;
+    padding: 10px 10px;
+    margin: 40px 20px 20px 40px;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.25);
+}
+.widget__clock{
+    width: 151.5px;
+    height: 151.5px;
+    background-image: url("../assets/clock__analog.png");
+    background-size: cover;
+}
 .icon__container{
+    top: 0px;
+    position: absolute;
     display: inline-block;
     margin: 40px 20px 20px 40px;
     user-select: none;
+    
 }
 .icon{
     position: relative;
@@ -10,19 +28,20 @@
     background-color: white;
     color: transparent;
     float: left;
-    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.25);
 }
 .icon__favicon{
     position: absolute;
-    top: 12px;
-    left: 12px;
-    width: 33px;
-    height: 33px;
-    background-image: url("../assets/youtube.svg");
+    top: 13px;
+    left: 13px;
+    width: 32px;
+    height: 32px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .icon__hover__container{
+    z-index: 10;
+    position:relative;
     float: right;
     text-align: center;
     transition: all ease-in-out 0.2s;
@@ -39,11 +58,12 @@
     display: block;
     padding-top: 21.5px;
     padding-bottom: 21.5px;
-    background-color: lightgray;
-    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.5);
+    background-color: #e1e1e1;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.25);
     text-transform: uppercase;
     font-weight: 800;
 }
+
 .icon:hover+.icon__hover__container{
     height: 58px;
     width: 181.25px;
@@ -61,13 +81,11 @@
     overflow-y: none;
 }
 .icon__links{
-    width: 181.25px;
+    width: 187.25px;
     height: 0px;
-    max-height: 174px;
     overflow: hidden;
     transition: all ease-in-out 0.2s;
 }
-
 .icon__link{
     width: 100%;
     height: 58px;
@@ -75,24 +93,54 @@
     padding-top: 21.5px;
     padding-bottom: 21.5px;
     background-color: white;
-    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.25);
     transition: all ease-in-out 0.2s;
 }
 .icon__hover:hover+.icon__links{
-    height: auto;
+    height: 174px;
     overflow: visible;
     overflow-y: auto;
     transition: all ease-in-out 0.2s;
 }
 .icon__links:hover{
-    height: auto;
+    height: 174px;
     overflow: visible;
     overflow-y: auto;
     transition: all ease-in-out 0.2s;
 }
 .icon__link:hover{
-    background-color: lightgray;
+    background-color: #e1e1e1;
 }
-
-
-
+.icon__links::-webkit-scrollbar {
+    position: absolute;
+    width: 6px;
+  
+}
+.icon__links::-webkit-scrollbar-button {
+    width: 6px;
+    height: 100%;
+    background: transparent;
+}
+.icon__links::-webkit-scrollbar-thumb {
+    background: darkslategray;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+}
+.icon__container__second{
+    left: 320px;
+}
+.icon__favicon--first{
+    background-image: url("../assets/youtube.svg");
+}
+.icon__favicon--second{
+    background-image: url("../assets/facebook.svg");
+}
+.icon__favicon--third{
+    background-image: url("../assets/instagram.svg");
+}
+.icon__container--second{
+    left: 340px;
+}
+.icon__container--third{
+    left: 450px;
+}
