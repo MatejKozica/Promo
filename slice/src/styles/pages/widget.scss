@@ -1,0 +1,61 @@
+.widget__container{
+    width: 251.5px;
+    height: 680px;
+    margin: 40px 20px 40px 20px;
+    display: inline-flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.25);
+}
+.widget__header{
+    height: 58px;
+    width: 100%;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.25);
+    display: flex;
+    margin-bottom: 37.5px;
+}
+.header__button{
+    height: 100%;
+    background-color: $red;
+    width: 60px;
+    flex-basis: auto;
+    background-image: url("../assets/settings.svg");
+    background-size: 30px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header__name{
+    height: 100%;
+    background-color: $gray;
+    flex-grow: 1;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-left: 15px;
+    line-height: 58px;
+}
+.widget__clock{
+    width: 151.5px;
+    height: 151.5px;
+    margin: auto;
+    margin-bottom: 37.5px;
+    margin-top: 0px;
+    background-image: url("../assets/clock__analog.png");
+    background-size: cover;
+}
+.widget__clock__digital{
+    width: 151.5px;
+    height:  75.75px;
+    margin: auto;
+    margin-bottom: 37.5px;
+    margin-top: 0px;
+    background-image: url("../assets/clock__digital.png");
+    background-size: cover;
+}
+.widget__calendar{
+    width: 151.5px;
+    height: 151.5px;
+    margin: auto;
+    margin-top: 0px;
+    background-image: url("../assets/calendar.png");
+    background-size: cover;
+}

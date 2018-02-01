@@ -418,24 +418,6 @@ template {
 [hidden] {
   display: none; }
 
-.widget__container {
-  width: 171.5px;
-  height: 171.5px;
-  padding: 10px 10px;
-  margin: 40px 20px 20px 40px;
-  display: inline-block;
-  background-color: white;
-  -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-     -moz-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25); }
-
-.widget__clock {
-  width: 151.5px;
-  height: 151.5px;
-  background-image: url("../assets/clock__analog.png");
-  -moz-background-size: cover;
-       background-size: cover; }
-
 .icon__container {
   top: 0px;
   position: absolute;
@@ -595,3 +577,92 @@ template {
 
 .icon__container--third {
   left: 450px; }
+
+.widget__container {
+  width: 251.5px;
+  height: 680px;
+  margin: 40px 20px 40px 20px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+     -moz-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25); }
+
+.widget__header {
+  height: 58px;
+  width: 100%;
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+     -moz-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 37.5px; }
+
+.header__button {
+  height: 100%;
+  background-color: #e22734;
+  width: 60px;
+  -webkit-flex-basis: auto;
+      -ms-flex-preferred-size: auto;
+          flex-basis: auto;
+  background-image: url("../assets/settings.svg");
+  -moz-background-size: 30px 30px;
+       background-size: 30px 30px;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.header__name {
+  height: 100%;
+  background-color: #e1e1e1;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+     -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-left: 15px;
+  line-height: 58px; }
+
+.widget__clock {
+  width: 151.5px;
+  height: 151.5px;
+  margin: auto;
+  margin-bottom: 37.5px;
+  margin-top: 0px;
+  background-image: url("../assets/clock__analog.png");
+  -moz-background-size: cover;
+       background-size: cover; }
+
+.widget__clock__digital {
+  width: 151.5px;
+  height: 75.75px;
+  margin: auto;
+  margin-bottom: 37.5px;
+  margin-top: 0px;
+  background-image: url("../assets/clock__digital.png");
+  -moz-background-size: cover;
+       background-size: cover; }
+
+.widget__calendar {
+  width: 151.5px;
+  height: 151.5px;
+  margin: auto;
+  margin-top: 0px;
+  background-image: url("../assets/calendar.png");
+  -moz-background-size: cover;
+       background-size: cover; }
