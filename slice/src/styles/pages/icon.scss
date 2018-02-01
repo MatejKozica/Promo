@@ -18,8 +18,7 @@
     position: absolute;
     display: inline-block;
     margin: 40px 20px 20px 40px;
-    user-select: none;
-    
+    user-select: none; 
 }
 .icon{
     position: relative;
@@ -63,7 +62,6 @@
     text-transform: uppercase;
     font-weight: 800;
 }
-
 .icon:hover+.icon__hover__container{
     height: 58px;
     width: 181.25px;
