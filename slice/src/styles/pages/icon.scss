@@ -3,7 +3,8 @@
     position: absolute;
     display: inline-block;
     margin: 40px 20px 20px 40px;
-    user-select: none; 
+    user-select: none;
+    color: $black;
 }
 .icon{
     position: relative;
@@ -122,8 +123,8 @@
     background-image: url("../assets/instagram.svg");
 }
 .icon__container--second{
-    left: 340px;
+    left: 390px;
 }
 .icon__container--third{
-    left: 450px;
+    left: 490px;
 }

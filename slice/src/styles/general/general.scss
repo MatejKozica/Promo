@@ -16,3 +16,8 @@ body {
     font-family: 'Montserrat';
     src: url("../assets/Font/Montserrat-Medium.otf");
 }
+@keyframes rotate {
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
