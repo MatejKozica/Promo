@@ -44,7 +44,6 @@
     border-radius: 50%;
     position: relative;
 }
-
 .minutes-container, .hours-container{
     position: absolute;
     top: 0;
@@ -52,7 +51,6 @@
     bottom: 0;
     left: 0;
 }
-
 .hours {
     background: $red;
     height: 20%;
@@ -73,11 +71,10 @@
 }
 .hours-container {
     animation: rotate 43200s infinite linear;
-  }
+}
 .minutes-container {
     animation: rotate 3600s infinite linear;
 }
-
 .widget__clock-digital{
     width: 151.5px;
     height:  auto;
@@ -110,6 +107,7 @@ ul {
     height: 151.5px;
     margin: auto;
     margin-top: 0px;
+    user-select: none;
 }
 .calendar__month {
     height: 28px;
