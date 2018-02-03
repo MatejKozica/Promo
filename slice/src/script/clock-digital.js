@@ -2,7 +2,7 @@ function digitalClock() {
     var time = new Date(),
     hours = time.getHours(),
     minutes = time.getMinutes();
-    document.querySelectorAll('.clock-digital__hour')[0].innerHTML = harold(hours) + ":" + harold(minutes);
+    document.getElementsByClassName('clock-digital__hour')[0].innerHTML = harold(hours) + ":" + harold(minutes);
 
     function harold(standIn) {
         if (standIn < 10) {
@@ -10,5 +10,7 @@ function digitalClock() {
         }
         return standIn;
     }
-    setInterval(clock, 1000);
+    setInterval(function(){digitalClock()}, 1000);
 }    
+
+setInterval(digitalClock(), 1000);
