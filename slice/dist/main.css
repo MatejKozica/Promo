@@ -440,7 +440,7 @@ template {
   top: 0px;
   position: absolute;
   display: inline-block;
-  margin: 20px 20px 20px 20px;
+  margin: 20px 0;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -572,7 +572,7 @@ template {
   background: transparent; }
 
 .icon__links::-webkit-scrollbar-thumb {
-  background: darkslategray;
+  background: #4f4f4f;
   border: 0px none #ffffff;
   -webkit-border-radius: 0px;
           border-radius: 0px; }
@@ -590,10 +590,10 @@ template {
   background-image: url("../assets/instagram.svg"); }
 
 .icon__container--second {
-  left: 390px; }
+  left: 355px; }
 
 .icon__container--third {
-  left: 490px; }
+  left: 423px; }
 
 .widget__container {
   width: 241.5px;
@@ -842,7 +842,12 @@ ul {
   -moz-background-size: 20px 20px;
        background-size: 20px 20px;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+     -moz-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 2; }
 
 .footer__button {
   background-color: #e1e1e1;
@@ -949,8 +954,7 @@ ul {
   text-transform: uppercase;
   font-size: 24px;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  line-height: 44px;
   color: white; }
 
 .login__signin {
@@ -959,3 +963,6 @@ ul {
   font-size: 17px;
   margin-top: 14px;
   text-decoration: underline; }
+
+.login__accept:hover {
+  background-color: #f05668; }

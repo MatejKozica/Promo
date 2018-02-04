@@ -2,7 +2,7 @@
     top: 0px;
     position: absolute;
     display: inline-block;
-    margin: 20px 20px 20px 20px;
+    margin: 20px 0;
     user-select: none;
     color: $black;
 }
@@ -96,7 +96,6 @@
 .icon__links::-webkit-scrollbar {
     position: absolute;
     width: 6px;
-  
 }
 .icon__links::-webkit-scrollbar-button {
     width: 6px;
@@ -104,7 +103,7 @@
     background: transparent;
 }
 .icon__links::-webkit-scrollbar-thumb {
-    background: darkslategray;
+    background: $black;
     border: 0px none #ffffff;
     border-radius: 0px;
 }
@@ -121,8 +120,8 @@
     background-image: url("../assets/instagram.svg");
 }
 .icon__container--second{
-    left: 390px;
+    left: 355px;
 }
 .icon__container--third{
-    left: 490px;
+    left: 423px;
 }

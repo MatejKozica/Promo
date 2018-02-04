@@ -53,8 +53,7 @@
     text-transform: uppercase;
     font-size: 24px;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    line-height: 44px;
     color: white;
 }
 .login__signin{
@@ -63,4 +62,7 @@
     font-size: 17px;
     margin-top: 14px;
     text-decoration: underline;
+}
+.login__accept:hover{
+    background-color: darken($red, 5%);
 }
