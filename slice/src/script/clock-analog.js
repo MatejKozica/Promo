@@ -1,7 +1,3 @@
-/*
- * Starts any clocks using the user's local time
- * From: cssanimation.rocks/clocks
- */
 function initLocalClocks() {
   // Get the local time using JS
   var date = new Date;
@@ -38,9 +34,6 @@ function initLocalClocks() {
   }
 }
 
-/*
- * Set a timeout for the first minute hand movement (less than 1 minute), then rotate it every minute after that
- */
 function setUpMinuteHands() {
   // Find out how far into the minute we are
   var containers = document.querySelectorAll('.minutes-container');
@@ -54,9 +47,6 @@ function setUpMinuteHands() {
   }
 }
 
-/*
- * Do the first minute's rotation
- */
 function moveMinuteHands(containers) {
   for (var i = 0; i < containers.length; i++) {
     containers[i].style.webkitTransform = 'rotateZ(6deg)';
