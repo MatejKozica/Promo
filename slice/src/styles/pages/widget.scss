@@ -203,3 +203,7 @@ ul {
 .delete__button:hover{
     background-color: darken($red, 5%);
 }
+.back__button{
+    flex-grow: 1;
+    background-image: url("../assets/back.svg");
+}

@@ -1,0 +1,26 @@
+.shop__container{
+    width: 220px;
+    height: 270px;
+    margin: 20px 20px 20px 20px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.1);
+    overflow: none;
+}
+.shop__header{
+    text-align: center;
+    background-color: $red;
+    height: 33px;
+    color: white;
+    font-size: 14px;
+    line-height: 33px;
+}
+.shop__footer{
+    height: 33px;
+}
+.shop__button{
+    flex-grow: 1;
+}
