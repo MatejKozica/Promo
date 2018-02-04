@@ -440,7 +440,7 @@ template {
   top: 0px;
   position: absolute;
   display: inline-block;
-  margin: 40px 20px 20px 40px;
+  margin: 20px 20px 20px 20px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -449,8 +449,8 @@ template {
 
 .icon {
   position: relative;
-  width: 58px;
-  height: 58px;
+  width: 48px;
+  height: 48px;
   background-color: white;
   color: transparent;
   float: left;
@@ -460,10 +460,10 @@ template {
 
 .icon__favicon {
   position: absolute;
-  top: 13px;
-  left: 13px;
-  width: 32px;
-  height: 32px;
+  top: 12px;
+  left: 12px;
+  width: 24px;
+  height: 24px;
   background-repeat: no-repeat;
   -moz-background-size: cover;
        background-size: cover; }
@@ -480,16 +480,15 @@ template {
   margin-bottom: 6px;
   width: 0px;
   height: 0px;
-  max-height: 232px;
+  max-height: 192px;
   overflow: hidden;
   font-size: 15px; }
 
 .icon__hover {
-  height: 58px;
+  height: 48px;
   width: 100%;
   display: block;
-  padding-top: 21.5px;
-  padding-bottom: 21.5px;
+  line-height: 48px;
   background-color: #e1e1e1;
   -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
      -moz-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
@@ -498,7 +497,7 @@ template {
   font-weight: 800; }
 
 .icon:hover + .icon__hover__container {
-  height: 58px;
+  height: 48px;
   width: 181.25px;
   -webkit-transition: all ease-in-out 0.2s;
   -o-transition: all ease-in-out 0.2s;
@@ -530,10 +529,9 @@ template {
 
 .icon__link {
   width: 100%;
-  height: 58px;
+  height: 48px;
   display: block;
-  padding-top: 21.5px;
-  padding-bottom: 21.5px;
+  line-height: 48px;
   background-color: white;
   -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
      -moz-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
@@ -544,7 +542,7 @@ template {
   transition: all ease-in-out 0.2s; }
 
 .icon__hover:hover + .icon__links {
-  height: 174px;
+  height: 144px;
   overflow: visible;
   overflow-y: auto;
   -webkit-transition: all ease-in-out 0.2s;
@@ -553,7 +551,7 @@ template {
   transition: all ease-in-out 0.2s; }
 
 .icon__links:hover {
-  height: 174px;
+  height: 144px;
   overflow: visible;
   overflow-y: auto;
   -webkit-transition: all ease-in-out 0.2s;
@@ -598,9 +596,9 @@ template {
   left: 490px; }
 
 .widget__container {
-  width: 251.5px;
-  height: 680px;
-  margin: 40px 20px 40px 20px;
+  width: 241.5px;
+  height: 720px;
+  margin: 20px 20px 20px 20px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -moz-inline-box;
@@ -614,16 +612,17 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: white;
-  -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-     -moz-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25); }
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  overflow: none; }
 
 .widget__header {
-  height: 58px;
+  height: 38px;
   width: 100%;
-  -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-     -moz-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -635,15 +634,18 @@ template {
 .header__button {
   height: 100%;
   background-color: #f26d7d;
-  width: 60px;
+  width: 38px;
   -webkit-flex-basis: auto;
       -ms-flex-preferred-size: auto;
           flex-basis: auto;
   background-image: url("../assets/settings.svg");
-  -moz-background-size: 30px 30px;
-       background-size: 30px 30px;
+  -moz-background-size: 20px 20px;
+       background-size: 20px 20px;
   background-position: center;
   background-repeat: no-repeat; }
+
+.header__button:hover {
+  background-color: #f05668; }
 
 .header__name {
   height: 100%;
@@ -653,10 +655,11 @@ template {
      -moz-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
+  letter-spacing: 2px;
   padding-left: 15px;
-  line-height: 58px; }
+  line-height: 38px; }
 
 .widget__clock {
   width: 151.5px;
@@ -668,7 +671,10 @@ template {
   -webkit-border-radius: 50%;
      -moz-border-radius: 50%;
           border-radius: 50%;
-  position: relative; }
+  position: relative;
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1); }
 
 .minutes-container, .hours-container {
   position: absolute;
@@ -747,7 +753,8 @@ template {
   color: white;
   font-size: 14px;
   padding-top: 7px;
-  padding-bottom: 7px; }
+  padding-bottom: 7px;
+  letter-spacing: 2px; }
 
 ul {
   list-style-type: none; }
@@ -771,7 +778,8 @@ ul {
   color: white;
   padding-top: 7px;
   padding-bottom: 7px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 2px; }
 
 .calendar__month ul {
   margin: 0;
@@ -813,6 +821,51 @@ ul {
   width: 100%;
   height: 100%; }
 
+.widget__footer {
+  height: 38px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.delete__button {
+  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+     -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #f26d7d;
+  background-image: url("../assets/trash.svg");
+  -moz-background-size: 20px 20px;
+       background-size: 20px 20px;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.footer__button {
+  background-color: #e1e1e1;
+  -webkit-flex-basis: auto;
+      -ms-flex-preferred-size: auto;
+          flex-basis: auto; }
+
+.footer__button--first {
+  position: relative;
+  background-image: url("../assets/new__folder.svg");
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+     -moz-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25); }
+
+.footer__button--second {
+  background-image: url("../assets/shop.svg"); }
+
+.footer__button:hover {
+  background-color: #d4d4d4; }
+
+.delete__button:hover {
+  background-color: #f05668; }
+
 .background {
   width: 100vw;
   height: 100vh;
@@ -821,7 +874,8 @@ ul {
   background-image: url("../assets/background.jpg");
   -moz-background-size: cover;
        background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  overflow: none; }
 
 .background--blur {
   -webkit-filter: blur(10px);
